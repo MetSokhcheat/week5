@@ -2,49 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/stylesingup.css">
-    <link rel="stylesheet" href="../Week06/bootstrap-5.3.3-dist/js/bootstrap.min.js">
-    <style>
-        body {
-            background-image: url('/image/khmer_festival.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            height: 100%;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style01.css">
+    <link rel="icon" href="./image/login.png">
+    <title>Log in</title>
 </head>
 <body>
-    <br>
-    <br>
-    <br>
-    <div class="allbody">
-        <!-- <img id="img1" src="/image/khmer_festival.jpg"> -->
-        <div class="singin">
-            <form>
-            <br>
-            <strong>    <input id="name" type="text" name="Username"  placeholder="Username"> </strong> <br>
-            <br>    <input  type="email" name="email" placeholder="Email Address" id="email"> <br>
-            <br>    <input type="password" name="password" placeholder="Password" id="password"> <br>
-            <br>    <input type="password" name="Comfirmed Password" placeholder="Comfirmed Password" id="cfpassword"> <br>
-            <br>    <button type="submit" id="A01"><strong>Sing Up</strong></button>
-            <p style="font-family: 'Courier New', Courier, monospace;">Already have account?<a href="/index01.html">Log in</a></p> </strong>
-            <center><h1>Or</h1></center>
+    <div class="container">
+        <div class="signin">
+            <form class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btn">
+                <p>Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="https://web.facebook.com/login.php?_rdc=1&_rdr" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/signup" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </form>
-            <div class="img02">
-                <a href="https://web.facebook.com/campaign/landing.php?campaign_id=1637278044&extra_1=s%7Cc%7C313962497730%7Ce%7Cfacebook%20login%7C&placement&creative=313962497730&keyword=facebook%20login&partner_id=googlesem&extra_2=campaignid%3D1637278044%26adgroupid%3D62025656625%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1409285535%26loc_physical_ms%3D9069948%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQiAouG5BhDBARIsAOc08RSNgC8EkZEDVoWjtcr9PL-cErKq5rVGdXEPuJyiFIDH51dwDgXu1DAaAg3XEALw_wcB&_rdc=1&_rdr#">
-                    <img id="A02" src="./image/download.png">
-                </a>
-                <a href="https://www.bing.com/ck/a?!&&p=52abd4e93a157611142e00df4358b2c1b4cfb057054b41e7fdbe317325289521JmltdHM9MTczMTcxNTIwMA&ptn=3&ver=2&hsh=4&fclid=1e67329e-b7e6-6ed9-153e-26a1b6d66ffb&psq=google+link+sign+in&u=a1aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL0xvZ2luP2hsPWVuLUdC&ntb=1">
-                    <img id="A03" src="./image/google.png">
-                </a>
-                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
-                    <img id="A04" src="./image/download (1).png">
-                </a>
-            </div>
+        </div>
+        <div class="panel">
+            <h3 class="title">Don't You have a account?</h3>
+            <img src="./image/images-removebg-preview.png" class="image">
+            <button class="btn"><a href="./Signup.html">Sing Up</a></button>
         </div>
     </div>
 </body>
