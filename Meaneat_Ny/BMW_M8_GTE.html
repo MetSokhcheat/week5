@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW M8 GTE</title>
+
+    <!-- Bootstrap CSS -->
     <link href="./csss/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+
     <style>
-        .hero-section {
-            text-align: center;
-            color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Image/M8_GTE.png');
-            background-size: cover;
-            background-position: center;
+        /* Background image section */
+        .background-image {
+            position: relative;
             height: 100vh;
+            background: url('file:///D:/Year%202/Web%20development/github/week5/Image/BMW%20M8%20GTE.jpg') no-repeat center center/cover;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
-        .features-section {
-            padding: 50px 15px;
+
+        .background-image h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
         }
-        .feature-card img {
-            height: 200px;
-            object-fit: cover;
+
+        .background-image p {
+            font-size: 1.5rem;
         }
+
+        section {
+            padding: 40px 20px;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
@@ -33,74 +46,37 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Background Image Section -->
+    <section class="background-image">
         <div>
             <h1>BMW M8 GTE</h1>
-            <p>Performance Redefined for the Track</p>
+            <p>Revolutionizing Racing Performance</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mt-5">
+    <section id="about" class="container">
         <h2 class="text-center mb-4">About the BMW M8 GTE</h2>
         <p class="text-center">
-            The BMW M8 GTE represents the pinnacle of motorsport engineering. As BMW’s ultimate endurance race car, it combines cutting-edge aerodynamics, 
-            a lightweight build, and a high-performance powertrain to dominate the track.
+            The BMW M8 GTE is a high-performance race car developed for endurance racing. It made its debut in the 2018 IMSA WeatherTech SportsCar Championship and has since become a symbol of BMW's motorsport heritage. Built for precision, speed, and durability, the M8 GTE combines cutting-edge aerodynamics, lightweight construction, and a powerful engine to deliver exceptional performance on the racetrack.
+
+            With a turbocharged V8 engine, sophisticated suspension systems, and an advanced chassis, the BMW M8 GTE excels in long-distance endurance racing, including the prestigious 24 Hours of Le Mans and 24 Hours of Daytona. The car is engineered to compete in both the IMSA and WEC (World Endurance Championship) series.
+
+            The BMW M8 GTE has become a fan favorite for its aggressive design, lightning-fast acceleration, and its ability to dominate on some of the world's most challenging race tracks.
+
+            <strong>Engine Specifications:</strong>
+            <ul>
+                <li>Engine: 4.0L Twin-Turbo V8</li>
+                <li>Output: 500+ hp</li>
+                <li>Torque: 650+ Nm</li>
+                <li>Transmission: 6-speed sequential gearbox</li>
+                <li>Weight: Approx. 1,250 kg</li>
+                <li>Aerodynamics: Active aerodynamics for optimized downforce</li>
+                <li>Chassis: Carbon fiber monocoque for enhanced rigidity and lightweight performance</li>
+            </ul>
         </p>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Key Features</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M8_GTE.png" class="card-img-top" alt="Advanced Aerodynamics">
-                        <div class="card-body">
-                            <h5 class="card-title">Advanced Aerodynamics</h5>
-                            <p class="card-text">The M8 GTE is engineered for maximum downforce and minimal drag, ensuring stability at high speeds.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M8_GTE.png" class="card-img-top" alt="Powerful V8 Engine">
-                        <div class="card-body">
-                            <h5 class="card-title">Powerful V8 Engine</h5>
-                            <p class="card-text">Its twin-turbocharged V8 engine delivers over 500 horsepower, tailored for endurance racing performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M8_GTE.png" class="card-img-top" alt="Racing Heritage">
-                        <div class="card-body">
-                            <h5 class="card-title">Racing Heritage</h5>
-                            <p class="card-text">The M8 GTE has competed in legendary events like the 24 Hours of Le Mans, embodying BMW's motorsport legacy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container mt-5">
-        <h2 class="text-center mb-4">Gallery</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <img src="Image/M8_GTE.png" class="img-fluid" alt="BMW M8 GTE">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M8_GTE.png" class="img-fluid" alt="BMW M8 GTE">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M8_GTE.png" class="img-fluid" alt="BMW M8 GTE">
-            </div>
-        </div>
     </section>
 
     <!-- Footer -->
@@ -108,6 +84,8 @@
         <p>© 2024 BMW M8 GTE. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

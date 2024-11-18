@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW M2 CS</title>
+
+    <!-- Bootstrap CSS -->
     <link href="./csss/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+
     <style>
-        .hero-section {
-            text-align: center;
-            color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Image/M2_CS.png');
-            background-size: cover;
-            background-position: center;
+        /* Background image section */
+        .background-image {
+            position: relative;
             height: 100vh;
+            background: url('file:///D:/Year%202/Web%20development/github/week5/Image/BMW%20M2%20CS.jpeg') no-repeat center center/cover;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
-        .features-section {
-            padding: 50px 15px;
+
+        .background-image h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
         }
-        .feature-card img {
-            height: 200px;
-            object-fit: cover;
+
+        .background-image p {
+            font-size: 1.5rem;
         }
+
+        section {
+            padding: 40px 20px;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
@@ -33,74 +46,38 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Background Image Section -->
+    <section class="background-image">
         <div>
             <h1>BMW M2 CS</h1>
-            <p>Uncompromising Performance in a Compact Design</p>
+            <p>Unleashing the Ultimate Performance</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mt-5">
+    <section id="about" class="container">
         <h2 class="text-center mb-4">About the BMW M2 CS</h2>
         <p class="text-center">
-            The BMW M2 CS is the ultimate expression of BMW's commitment to combining agility, power, and luxury. 
-            Designed for the thrill-seeker, it delivers track-level performance with daily drivability in a compact coupe design.
+            The BMW M2 CS is the high-performance variant of the BMW M2, designed to offer the ultimate driving experience for enthusiasts who crave raw power, agility, and precision. The M2 CS takes the M2's aggressive styling and performance to the next level, with a more powerful engine, enhanced suspension, and reduced weight to deliver exceptional handling and speed.
+
+            Powered by a 3.0L Twin-Turbo inline-6 engine, the M2 CS produces an impressive 444 horsepower and 406 lb-ft of torque, making it one of the most potent models in the M2 lineup. This power is harnessed by an 8-speed dual-clutch transmission (DCT), allowing the M2 CS to accelerate from 0 to 60 mph in just 3.8 seconds.
+
+            The M2 CS also features a lightweight carbon fiber roof, larger brakes, and an adaptive suspension system that ensures perfect handling on both the road and track. With the precision-tuned M chassis and aggressive styling, the M2 CS delivers a thrilling driving experience whether you're carving through mountain roads or pushing it to the limit on a racetrack.
+
+            <strong>Engine Specifications:</strong>
+            <ul>
+                <li>Engine: 3.0L Twin-Turbo Inline-6</li>
+                <li>Output: 444 hp</li>
+                <li>Torque: 406 lb-ft</li>
+                <li>Transmission: 8-speed dual-clutch transmission (DCT)</li>
+                <li>0-60 mph: 3.8 seconds</li>
+                <li>Top Speed: 174 mph</li>
+                <li>Weight: Approx. 1,575 kg</li>
+                <li>Aerodynamics: Aggressive front and rear styling for optimized airflow</li>
+            </ul>
         </p>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Key Features</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M2_CS.png" class="card-img-top" alt="High-Performance Engine">
-                        <div class="card-body">
-                            <h5 class="card-title">High-Performance Engine</h5>
-                            <p class="card-text">Equipped with a twin-turbocharged inline-six engine, the M2 CS delivers 444 horsepower, making every drive exhilarating.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M2_CS.png" class="card-img-top" alt="Lightweight Design">
-                        <div class="card-body">
-                            <h5 class="card-title">Lightweight Design</h5>
-                            <p class="card-text">With carbon fiber-reinforced components, the M2 CS achieves optimal weight distribution and improved handling.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M2_CS.png" class="card-img-top" alt="Precision Engineering">
-                        <div class="card-body">
-                            <h5 class="card-title">Precision Engineering</h5>
-                            <p class="card-text">From the Adaptive M Suspension to M Compound Brakes, the M2 CS is engineered for precision on and off the track.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container mt-5">
-        <h2 class="text-center mb-4">Gallery</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <img src="Image/M2_CS.png" class="img-fluid" alt="M2 CS">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M2_CS.png" class="img-fluid" alt="M2 CS">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M2_CS.png" class="img-fluid" alt="M2 CS">
-            </div>
-        </div>
     </section>
 
     <!-- Footer -->
@@ -108,6 +85,8 @@
         <p>© 2024 BMW M2 CS. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4 GTS - Ultimate Driving Machine</title>
+    <title>BMW M4 GT3</title>
+
+    <!-- Bootstrap CSS -->
     <link href="./csss/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+
     <style>
-        .hero-section {
-            text-align: center;
-            color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Image/M4 GT3.png');
-            background-size: cover;
-            background-position: center;
+        /* Background image section */
+        .background-image {
+            position: relative;
             height: 100vh;
+            background: url('file:///D:/Year%202/Web%20development/github/week5/Image/MG%20GT3_2.png') no-repeat center center/cover;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
-        .features-section {
-            padding: 50px 15px;
+
+        .background-image h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
         }
-        .feature-card img {
-            height: 200px;
-            object-fit: cover;
+
+        .background-image p {
+            font-size: 1.5rem;
         }
+
+        section {
+            padding: 40px 20px;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
@@ -33,81 +46,46 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Background Image Section -->
+    <section class="background-image">
         <div>
-            <h1>BMW M4 GTS</h1>
-            <p>The Perfect Blend of Performance and Luxury</p>
+            <h1>BMW M4 GT3</h1>
+            <p>Unleashing Ultimate Track Performance</p>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mt-5">
-        <h2 class="text-center mb-4">About the M4 GTS</h2>
+    <section id="about" class="container">
+        <h2 class="text-center mb-4">About the BMW M4 GT3</h2>
         <p class="text-center">
-            The BMW M4 GTS is a limited-edition high-performance coupe that delivers an unparalleled driving experience. 
-            With cutting-edge technology, track-ready engineering, and sleek aesthetics, the M4 GTS sets new benchmarks in the sports car segment.
+            The BMW M4 GT3 is a race car built to compete at the highest levels of motorsport. With a commitment to precision engineering and superior performance, the M4 GT3 is designed for endurance racing and GT racing competitions. Powered by a turbocharged inline-six engine and a lightweight chassis, this car delivers exceptional handling and speed, making it a true contender in every race.
+
+            Since its debut, the M4 GT3 has competed in prestigious series such as the IMSA WeatherTech SportsCar Championship and the 24 Hours of Nürburgring. Designed for both speed and durability, it showcases BMW’s dedication to pushing the limits of technology and performance on the race track.
+
+            The car is equipped with advanced aerodynamics and a sophisticated suspension system that ensures stability and responsiveness even under the most challenging racing conditions. The BMW M4 GT3 is a symbol of excellence in both engineering and racing heritage.
+
+            <strong>Engine Specifications:</strong>
+            <ul>
+                <li>Engine: 3.0L Twin-Turbocharged Inline-6</li>
+                <li>Output: 500+ hp</li>
+                <li>Torque: 600+ Nm</li>
+                <li>Transmission: 6-speed sequential gearbox</li>
+                <li>Weight: Approx. 1,300 kg</li>
+                <li>Aerodynamics: Active aero system for downforce control</li>
+                <li>Chassis: Lightweight carbon fiber reinforced polymer (CFRP)</li>
+            </ul>
         </p>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Key Features</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M4 GT3.png" class="card-img-top" alt="Performance">
-                        <div class="card-body">
-                            <h5 class="card-title">Track-Ready Performance</h5>
-                            <p class="card-text">Equipped with a powerful engine and lightweight construction, the M4 GTS is designed for the racetrack.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M4 GT3.png" class="card-img-top" alt="Design">
-                        <div class="card-body">
-                            <h5 class="card-title">Aerodynamic Design</h5>
-                            <p class="card-text">Every curve and detail enhances speed and stability, ensuring a bold presence on the road.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M4 GT3.png" class="card-img-top" alt="Technology">
-                        <div class="card-body">
-                            <h5 class="card-title">Advanced Technology</h5>
-                            <p class="card-text">The M4 GTS features innovative technologies for optimal performance and driver convenience.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container mt-5">
-        <h2 class="text-center mb-4">Gallery</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <img src="D:\Year 2\Web development\github\week5\Image\M4 GT3.png" class="img-fluid" alt="M4 GTS">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M4 GT3.png" class="img-fluid" alt="M4 GTS">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M4 GT3.png" class="img-fluid" alt="M4 GTS">
-            </div>
-        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 BMW M4 GTS. All Rights Reserved.</p>
+        <p>© 2024 BMW M4 GT3. All Rights Reserved.</p>
     </footer>
 
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
