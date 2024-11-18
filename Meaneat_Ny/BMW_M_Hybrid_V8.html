@@ -7,23 +7,26 @@
     <link href="./csss/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="./js/bootstrap.min.js">
     <style>
-        .hero-section {
-            text-align: center;
-            color: white;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Image/M_Hybrid_V8.png');
-            background-size: cover;
-            background-position: center;
+        /* Background image section */
+        .background-image {
+            position: relative;
             height: 100vh;
+            background: url('Image/BMW_M_Hybrid_V8.png') no-repeat center center/cover;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
         }
-        .features-section {
-            padding: 50px 15px;
+        .background-image h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
         }
-        .feature-card img {
-            height: 200px;
-            object-fit: cover;
+        .background-image p {
+            font-size: 1.5rem;
+        }
+        section {
+            padding: 40px 20px;
         }
         footer {
             text-align: center;
@@ -34,8 +37,8 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Background Image Section -->
+    <section class="background-image">
         <div>
             <h1>BMW M Hybrid V8</h1>
             <p>Pioneering Performance Meets Innovation</p>
@@ -43,64 +46,13 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mt-5">
-        <h2 class="text-center mb-4">About the M Hybrid V8</h2>
+    <section id="about" class="container">
+        <h2 class="text-center mb-4">About the BMW M Hybrid V8</h2>
         <p class="text-center">
-            The BMW M Hybrid V8 is a testament to the future of performance vehicles, blending sustainable hybrid technology with the unmistakable power and luxury of BMW M. 
-            Designed for endurance racing and the road, it sets a new standard for innovation.
+            The BMW M Hybrid V8 represents the cutting-edge of hybrid technology in motorsport. It blends exceptional performance with advanced engineering, 
+            making it a powerhouse of speed, efficiency, and innovation. Designed to dominate endurance races, this vehicle underscores BMW's dedication to 
+            sustainability and automotive excellence.
         </p>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Key Features</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M_Hybrid_V8.png" class="card-img-top" alt="Sustainable Power">
-                        <div class="card-body">
-                            <h5 class="card-title">Sustainable Power</h5>
-                            <p class="card-text">The hybrid V8 engine delivers exceptional performance with reduced emissions, bridging the gap between power and sustainability.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M_Hybrid_V8.png" class="card-img-top" alt="Aerodynamic Excellence">
-                        <div class="card-body">
-                            <h5 class="card-title">Aerodynamic Excellence</h5>
-                            <p class="card-text">With cutting-edge aerodynamic design, the M Hybrid V8 ensures efficiency and control at high speeds.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card feature-card">
-                        <img src="Image/M_Hybrid_V8.png" class="card-img-top" alt="Advanced Technology">
-                        <div class="card-body">
-                            <h5 class="card-title">Advanced Technology</h5>
-                            <p class="card-text">Packed with BMW’s latest technology, including hybrid energy recovery systems and intelligent drive modes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="container mt-5">
-        <h2 class="text-center mb-4">Gallery</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <img src="Image/M_Hybrid_V8.png" class="img-fluid" alt="M Hybrid V8">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M_Hybrid_V8.png" class="img-fluid" alt="M Hybrid V8">
-            </div>
-            <div class="col-md-4 mb-3">
-                <img src="Image/M_Hybrid_V8.png" class="img-fluid" alt="M Hybrid V8">
-            </div>
-        </div>
     </section>
 
     <!-- Footer -->
