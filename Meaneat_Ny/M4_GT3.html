@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4 GT3</title>
+    <title>M4 GTS - Ultimate Driving Machine</title>
+    <link href="./csss/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./js/bootstrap.min.js">
+    <style>
+        .hero-section {
+            text-align: center;
+            color: white;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Image/M4 GT3.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .features-section {
+            padding: 50px 15px;
+        }
+        .feature-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f8f9fa;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <h1>BMW M4 GTS</h1>
+            <p>The Perfect Blend of Performance and Luxury</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-center mb-4">About the M4 GTS</h2>
+        <p class="text-center">
+            The BMW M4 GTS is a limited-edition high-performance coupe that delivers an unparalleled driving experience. 
+            With cutting-edge technology, track-ready engineering, and sleek aesthetics, the M4 GTS sets new benchmarks in the sports car segment.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="Image/M4 GT3.png" class="card-img-top" alt="Performance">
+                        <div class="card-body">
+                            <h5 class="card-title">Track-Ready Performance</h5>
+                            <p class="card-text">Equipped with a powerful engine and lightweight construction, the M4 GTS is designed for the racetrack.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="Image/M4 GT3.png" class="card-img-top" alt="Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Aerodynamic Design</h5>
+                            <p class="card-text">Every curve and detail enhances speed and stability, ensuring a bold presence on the road.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="Image/M4 GT3.png" class="card-img-top" alt="Technology">
+                        <div class="card-body">
+                            <h5 class="card-title">Advanced Technology</h5>
+                            <p class="card-text">The M4 GTS features innovative technologies for optimal performance and driver convenience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+        <h2 class="text-center mb-4">Gallery</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="Image/M4 GT3.png" class="img-fluid" alt="M4 GTS">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="Image/M4 GT3.png" class="img-fluid" alt="M4 GTS">
+            </div>
+            <div class="col-md-4 mb-3">
+                <img src="Image/M4 GT3.png" class="img-fluid" alt="M4 GTS">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 BMW M4 GTS. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
